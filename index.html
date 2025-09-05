@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Geminus - Aetherial Shard (Dev)</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://css.gg/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Link to our external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-black text-gray-200 theme-aetherial-shard">
+    <canvas id="smoke-canvas"></canvas>
+
+    <!-- The entire HTML body from our most recent code goes here. -->
+    <!-- This includes login screens, game container, all modals, and overlays. -->
+
+    <div id="login-screen" class="login-page active">
+        <!-- Login Form Content -->
+    </div>
+    
+    <div id="create-account-screen" class="login-page">
+        <!-- Account Creation Form Content -->
+    </div>
+
+    <div id="game-container" class="h-full hidden">
+        <div id="game-hud-screen" class="relative z-10 h-full">
+            <div id="layout-container" class="max-w-md mx-auto h-full flex flex-col p-2 gap-2">
+                <!-- All HUD, Main Content, and Footer elements go here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- All modals and overlays go here -->
+    <div id="modal-container"></div>
+    <div id="toast-notification"></div>
+    <div id="chat-modal" class="modal-backdrop hidden"></div>
+    <div id="item-action-modal-backdrop" style="display: none;"></div>
+    <div id="item-action-modal-content" class="glass-panel p-4 rounded-lg" style="display: none;"></div>
+    <div id="stat-info-modal" style="display: none;"></div>
+    <div id="full-screen-map-overlay" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex-col items-center justify-between p-4"></div>
+    <div id="profile-modal" class="modal-backdrop hidden"></div>
+    <div id="auction-modal" class="modal-backdrop hidden"></div>
+    <div id="bid-modal" class="modal-backdrop hidden"></div>
+
+    <!-- 
+      This script tag is now set to type="module" and points to our main.js file.
+      The browser will automatically handle importing all other necessary scripts from there.
+    -->
+    <script type="module" src="main.js"></script>
+
+    <!-- 
+      CANVAS BUILD INSTRUCTIONS:
+      To test in the Canvas iframe, you will need to manually create a single file.
+      1. Create a new blank HTML file.
+      2. Copy the entire content of THIS file into it.
+      3. In the new file, DELETE the <link rel="stylesheet" href="style.css"> line.
+      4. Copy the entire content of your 'style.css' file and paste it inside the <style> tags.
+      5. In the new file, DELETE the <script type="module" src="main.js"></script> line.
+      6. Create a new <script type="module"> tag.
+      7. Copy the content of gdd.js, systems.js, managers.js, and main.js (in that order) 
+         and paste it all inside the new script tag. Remove all 'import' and 'export' keywords.
+    -->
+</body>
+</html>
+
