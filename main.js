@@ -12,14 +12,7 @@ import {
 } from './managers.js';
 
 // --- Firebase Configuration ---
-const firebaseConfig = {
-  apiKey: "AIzaSyCTkAvrEXs86AxsfdPJCh7ztg_sLA9htvU",
-  authDomain: "geminus-online-game-6cbaa.firebaseapp.com",
-  projectId: "geminus-online-game-6cbaa",
-  storageBucket: "geminus-online-game-6cbaa.firebasestorage.app",
-  messagingSenderId: "944055170590",
-  appId: "1:944055170590:web:c58245636ee3643832200f"
-};
+
 const appId = 'geminus-gog';
 
 // --- Global App State & UI References ---
